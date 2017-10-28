@@ -56,7 +56,7 @@ systemctl enable dhcpcd
 passwd
 
 #install the bootloader grub
-pacman -S grup
+pacman -S grub
 
 #install grub bootloader to hdd
 grub-install (location of hard drive)
