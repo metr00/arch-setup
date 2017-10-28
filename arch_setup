@@ -34,7 +34,7 @@ arch-chroot /mnt /bin/bash
 
 #set location of system (uncomment en_US.UTF-8 UTF-8)
 nano /etc/locale.gen 
-uncomment also 'en_US ISO-8859-1'
+localectl set-locale LANG="en_US.UTF-8"
 
 #generate local
 locale-gen
