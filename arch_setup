@@ -148,8 +148,6 @@ sudo pacman -S konsole dolphin firefox kate
 #start gui
 startx﻿ 
 
-#if gnome-terminal doesn't work run this command
-localectl set-locale LANG="en_US.UTF-8"
 
 
 
