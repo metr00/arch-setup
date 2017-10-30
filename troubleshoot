@@ -6,3 +6,9 @@
 # to enable network settings
 > systemctl start NetworkManager.service
 > systemctl enable NetworkManager.service
+
+# to troubleshoot virtualbox
+> sudo pacman -S virtualbox-host-modules-arch
+# installs modules
+> sudo modprobe vboxdrv vboxnetadp vboxnetflt vboxpci
+> reboot
