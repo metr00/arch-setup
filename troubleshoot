@@ -1,0 +1,6 @@
+# if gnome-terminal doesn't work use this command
+> localectl set-locale LANG="en_US.UTF-8"
+> locale-gen
+
+# to enable network settings
+> systemctl enable NetworkManager.service
