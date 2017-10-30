@@ -9,7 +9,7 @@ pacman -Syy
 pacman -S reflector
 
 #setup reflector
-reflector -c "US" -f 12 -l 10 -n12 --save /etc/pacman.d/mirrorlist
+reflector -c "US" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist
 
 #check for partitions
 fdisk -l
@@ -68,7 +68,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 exit
 
 #unmount the system
-umount-R /mnt
+umount -R /mnt
 
 #reboot take disk or usb out of the computer
 reboot
