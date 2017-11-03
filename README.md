@@ -53,7 +53,7 @@
 
 `locale-gen`
 
--set the clock (replace US and Mountain if you aren't in the mountain time zone)
+- set the clock (replace US and Mountain if you aren't in the mountain time zone)
 
 `ln -sf /usr/share/zoneoinfo/US/Mountain /etc/localtime`
 
@@ -123,11 +123,11 @@
 
 `sudo pacman -S pulseaudio pulseaudio-alsa`
 
--install xorg server (leave the first option the default, the second one need to be 1 if you're using integrated graphics)
+- install xorg server (leave the first option the default, the second one need to be 1 if you're using integrated graphics)
 
 `sudo pacman xorg -S xorg xorg-xinit`
 
--create file of initiation for GUI
+- create file of initiation for GUI
 
 
 `echo "(gui of choice)" > ~/.xinitrc`
