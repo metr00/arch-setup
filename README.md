@@ -134,6 +134,7 @@
 
 `sudo pacman -S plasma-desktop`
 
+---
 xfce:
 "exec startxfce4"
 `sudo pacman -S xfce4`
@@ -174,6 +175,7 @@ LXDE
 "exec startlxde"
 `sudo pacman -S lxde`
 
+---
 - install aditional packages like a file manager, terminal inulater, web browser, and text editor
 
 `sudo pacman -S konsole dolphin firefox kate`
