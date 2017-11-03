@@ -2,7 +2,7 @@
 ## description on how to setup arch linux
 
 
--check internet connection (use wired to make it easy)
+- check internet connection (use wired to make it easy)
 `ping -c 3 google.com` 
 
 #update pacman database
