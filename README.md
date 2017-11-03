@@ -19,6 +19,7 @@
 `reflector -c "US" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist`
 
 - check for partitions
+
 `fdisk -l`
 
 - repartition hard drive (erase all partitions make one that takes up the whole disk, make it the primary partition, then make it bootable. Write the changes. 
