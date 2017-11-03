@@ -37,7 +37,7 @@
 
 `pacstrap -i /mnt base base-devel`
 
--`generate fstab file
+- generate fstab file
 
 `genfstab -U -p /mnt >> /mnt/etc/fstab`
 
