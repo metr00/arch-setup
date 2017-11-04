@@ -221,5 +221,12 @@ troubleshooting
 
 `reboot`
 
+---
+- enable login manager(GDM)
+
+`systemctl enable gdm.service`
+
+`reboot`
+
 
 
