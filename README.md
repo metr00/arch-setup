@@ -1,6 +1,5 @@
 # arch-setup
-## description on how to setup arch linux
-![](https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png)
+## description on how to setup arch linux ![](https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png)
 
 - check internet connection (use wired to make it easy)
 
