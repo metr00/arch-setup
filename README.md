@@ -222,7 +222,7 @@ troubleshooting
 `reboot`
 
 ---
-- enable login manager(GDM)
+- enable login manager(GDM comes preinstall)
 
 `systemctl enable gdm.service`
 
