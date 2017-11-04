@@ -139,7 +139,7 @@
 
   `echo "(gui of choice)" > ~/.xinitrc`
 
-  `sudo pacman -S plasma-desktop`
+  `sudo pacman -S gnome`
 
 ---
 xfce:
