@@ -23,21 +23,21 @@
 
 - repartition hard drive (erase all partitions make one that takes up the whole disk, make it the primary partition, then make it bootable. Write the changes. 
 
-  `cfdisk` (location of hard drive)
+  `cfdisk (location of hard drive)`
 
 - Format the disk to ext4
 
-  `mkfs.ext4` (location of disk with partition number)
+  `mkfs.ext4 (location of disk with partition number)`
 
 - format swap partition
 
-  `mkswap` (location of swap with partition number)
+  `mkswap (location of swap with partition number)`
 
-  `swapon` (location of swap with partition number)
+  `swapon (location of swap with partition number)`
 
 - mount disk to system 
 
-  `mount` (disk location with partition number) `/mnt`
+  `mount (disk location with partition number) /mnt`
 
 - install base system 
 
@@ -87,7 +87,7 @@
 
 - install grub bootloader to hdd
 
-  `grub-install` (location of hard drive)
+  `grub-install (location of hard drive)`
 
 - generate configuration file
 
@@ -113,7 +113,7 @@
 
 - assign a password to user
 
-  `passwd` (username)
+  `passwd (username)`
 
 - add new user to sudo group (uncomment %wheel ALL=(ALL) ALL)
 
