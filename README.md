@@ -30,6 +30,12 @@
 
 `mkfs.ext4` (location of disk with partition number)
 
+- format swap partition
+
+`mkswap` (location of swap with partition number)
+
+`swapon` (location of swap with partition number)
+
 - mount disk to system 
 
 `mount` (disk location with paertition number) /mnt
