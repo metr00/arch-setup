@@ -185,6 +185,7 @@ LXDE
 
 `startx﻿` 
 
-
+troubleshooting
+======
 
 
