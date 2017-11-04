@@ -4,7 +4,7 @@
 
 - check internet connection (use wired to make it easy)
 
-`ping -c 3 google.com` 
+  `ping -c 3 google.com` 
 
 - update pacman database
 
