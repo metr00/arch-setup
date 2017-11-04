@@ -215,7 +215,7 @@ troubleshooting
 
   `sudo pacman -S virtualbox-host-modules-arch`
 
-- installs modules
+  (installs modules)
 
   `sudo modprobe vboxdrv vboxnetadp vboxnetflt vboxpci`
 
