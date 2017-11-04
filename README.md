@@ -8,138 +8,138 @@
 
 - update pacman database
 
-`pacman -Syy`
+  `pacman -Syy`
 
 - install a reflector
 
-`pacman -S reflector`
+  `pacman -S reflector`
 
 - setup reflector
 
-`reflector -c "US" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist`
+  `reflector -c "US" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist`
 
 - check for partitions
 
-`fdisk -l`
+  `fdisk -l`
 
 - repartition hard drive (erase all partitions make one that takes up the whole disk, make it the primary partition, then make it bootable. Write the changes. 
 
-`cfdisk` (location of hard drive)
+  `cfdisk` (location of hard drive)
 
 - Format the disk to ext4
 
-`mkfs.ext4` (location of disk with partition number)
+  `mkfs.ext4` (location of disk with partition number)
 
 - format swap partition
 
-`mkswap` (location of swap with partition number)
+  `mkswap` (location of swap with partition number)
 
-`swapon` (location of swap with partition number)
+  `swapon` (location of swap with partition number)
 
 - mount disk to system 
 
-`mount` (disk location with partition number) `/mnt`
+  `mount` (disk location with partition number) `/mnt`
 
 - install base system 
 
-`pacstrap -i /mnt base base-devel`
+  `pacstrap -i /mnt base base-devel`
 
 - generate fstab file
 
-`genfstab -U -p /mnt >> /mnt/etc/fstab`
+  `genfstab -U -p /mnt >> /mnt/etc/fstab`
 
 - login to new system as root 
 
-`arch-chroot /mnt /bin/bash`
+  `arch-chroot /mnt /bin/bash`
 
 - set location of system (uncomment en_US.UTF-8 UTF-8)
 
-`nano /etc/locale.gen` 
+  `nano /etc/locale.gen` 
 
 - generate local
 
-`locale-gen`
+  `locale-gen`
 
 - set the clock (replace US and Mountain if you aren't in the mountain time zone)
 
-`ln -sf /usr/share/zoneoinfo/US/Mountain /etc/localtime`
+  `ln -sf /usr/share/zoneoinfo/US/Mountain /etc/localtime`
 
-`hwclock --systohc --utc`
+  `hwclock --systohc --utc`
 
 - give computer a name
 
-`echo (computer name) > /etc/hostname`
+  `echo (computer name) > /etc/hostname`
 
 - edit host file add 127.0.1.1 to ipaddress, localhost.localdomain to hostmane.domain.ort, and pc name to hostname
 
-`nano /etc/hosts`
+  `nano /etc/hosts`
 
 - enable network service
-
-`systemctl enable dhcpcd`
+  
+  `systemctl enable dhcpcd`
 
 - set password for root
 
-`passwd`
+  `passwd`
 
 - install the bootloader grub
 
-`pacman -S grub`
+  `pacman -S grub`
 
 - install grub bootloader to hdd
 
-`grub-install` (location of hard drive)
+  `grub-install` (location of hard drive)
 
 - generate configuration file
 
-`grub-mkconfig -o /boot/grub/grub.cfg`
+  `grub-mkconfig -o /boot/grub/grub.cfg`
 
 - logout of the system
 
-`exit`
+  `exit`
 
 - unmount the system
 
-`umount -R /mnt`
+  `umount -R /mnt`
 
 - reboot take disk or usb out of the computer
 
-`reboot`
+  `reboot`
 
 - log into root using the password you set 
 
 - create a new user
 
-`useradd -m -g users -G wheel -s /bin/bash (username)`
+  `useradd -m -g users -G wheel -s /bin/bash (username)`
 
 - assign a password to user
 
-`passwd` (username)
+  `passwd` (username)
 
 - add new user to sudo group (uncomment %wheel ALL=(ALL) ALL)
 
-`EDITOR=nano visudo`
+  `EDITOR=nano visudo`
 
 - logout of root
 
-`exit` 
+  `exit` 
 
 - login as new user 
 
 - install audio packages
 
-`sudo pacman -S pulseaudio pulseaudio-alsa`
+  `sudo pacman -S pulseaudio pulseaudio-alsa`
 
 - install xorg server (leave the first option the default, the second one need to be 1 if you're using integrated graphics)
 
-`sudo pacman xorg -S xorg xorg-xinit`
+  `sudo pacman xorg -S xorg xorg-xinit`
 
 - create file of initiation for GUI
 
 
-`echo "(gui of choice)" > ~/.xinitrc`
+  `echo "(gui of choice)" > ~/.xinitrc`
 
-`sudo pacman -S plasma-desktop`
+  `sudo pacman -S plasma-desktop`
 
 ---
 xfce:
@@ -185,11 +185,11 @@ LXDE
 ---
 - install aditional packages like a file manager, terminal inulater, web browser, and text editor
 
-`sudo pacman -S konsole dolphin firefox kate`
+  `sudo pacman -S konsole dolphin firefox kate`
 
 - start gui
 
-`startx﻿` 
+  `startx﻿` 
 
 
 troubleshooting
@@ -197,36 +197,36 @@ troubleshooting
 
 - if gnome-terminal doesn't work use this command
 
-`localectl set-locale LANG="en_US.UTF-8"`
+  `localectl set-locale LANG="en_US.UTF-8"`
 
-`locale-gen`
+  `locale-gen`
 
-`reboot`
+  `reboot`
 
 ---
 - to enable network settings
 
-`systemctl start NetworkManager.service`
+  `systemctl start NetworkManager.service`
 
-`systemctl enable NetworkManager.service`
+  `systemctl enable NetworkManager.service`
 
 ---
 - to troubleshoot virtualbox
 
-`sudo pacman -S virtualbox-host-modules-arch`
+  `sudo pacman -S virtualbox-host-modules-arch`
 
 - installs modules
 
-`sudo modprobe vboxdrv vboxnetadp vboxnetflt vboxpci`
+  `sudo modprobe vboxdrv vboxnetadp vboxnetflt vboxpci`
 
-`reboot`
+  `reboot`
 
 ---
-- enable login manager(GDM comes preinstall)
+- enable login manager(GDM comes preinstalled)
 
-`systemctl enable gdm.service`
+  `systemctl enable gdm.service`
 
-`reboot`
+  `reboot`
 
 
 
