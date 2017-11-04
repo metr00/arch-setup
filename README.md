@@ -38,7 +38,7 @@
 
 - mount disk to system 
 
-`mount` (disk location with paertition number) `/mnt`
+`mount` (disk location with partition number) `/mnt`
 
 - install base system 
 
