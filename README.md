@@ -141,45 +141,45 @@
   `sudo pacman -S gnome`
 
 ---
-xfce:
-"exec startxfce4"
-`sudo pacman -S xfce4`
+  xfce:
+  "exec startxfce4"
+  `sudo pacman -S xfce4`
 
-gnome:
-"exec gnome-session"
-`sudo pacman -S gnome`
+  gnome:
+  "exec gnome-session"
+  `sudo pacman -S gnome`
 
-cinnamon:
-"exec cinnamon-session"
-`sudo pacman -S cinnamon`
+  cinnamon:
+  "exec cinnamon-session"
+  `sudo pacman -S cinnamon`
 
-mate:
-"exec mate-session"
-`sudo pacman -S mate`
+  mate:
+  "exec mate-session"
+  `sudo pacman -S mate`
 
-unity:
-"exec unity"
-Unity installation is tricky - see https://wiki.archlinux.org/index.php/...
+  unity:
+  "exec unity"
+  Unity installation is tricky - see https://wiki.archlinux.org/index.php/...
 
-openbox:
-"exec openbox-session"
-`sudo pacman -S openbox`
+  openbox:
+  "exec openbox-session"
+  `sudo pacman -S openbox`
 
-i3:
-"exec i3"
-`sudo pacman -S i3`
+  i3:
+  "exec i3"
+  `sudo pacman -S i3`
 
-awesome:
-"exec awesome"
-`sudo pacman -S awesome`
+  awesome:
+  "exec awesome"
+  `sudo pacman -S awesome`
 
-deepin
-"exec startdde"
-`sudo pacman -S deepin`
+  deepin
+  "exec startdde"
+  `sudo pacman -S deepin`
 
-LXDE
-"exec startlxde"
-`sudo pacman -S lxde`
+  LXDE
+  "exec startlxde"
+  `sudo pacman -S lxde`
 
 ---
 - install aditional packages like a file manager, terminal inulater, web browser, and text editor
