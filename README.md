@@ -242,8 +242,8 @@ troubleshooting
 ---
 - if installing using wifipacman 
 
-`pacman -S wireless_tools wpa_supplicant wpa_actiond dialog networkmanager iw`
+  `pacman -S wireless_tools wpa_supplicant wpa_actiond dialog networkmanager iw`
 
-use `wifi-menu`
+  use `wifi-menu`
 
 
