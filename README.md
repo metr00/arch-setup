@@ -239,6 +239,11 @@ troubleshooting
   
   `sudo grub-mkconfig -o /boot/grub/grub.cfg`
   
-  
+---
+- if installing using wifipacman 
+
+`pacman -S wireless_tools wpa_supplicant wpa_actiond dialog networkmanager iw`
+
+use `wifi-menu`
 
 
