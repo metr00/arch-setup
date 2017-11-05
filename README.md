@@ -240,10 +240,27 @@ troubleshooting
   `sudo grub-mkconfig -o /boot/grub/grub.cfg`
   
 ---
-- if installing using wifipacman 
+- if installing using wifi 
 
   `pacman -S wireless_tools wpa_supplicant wpa_actiond dialog networkmanager iw`
 
   use `wifi-menu`
 
+---
+- making swap partition work at startup
+
+  (check your swap partition using)
+  
+  `sudo blkid`
+  
+  (should show like this example)
+  
+  `/dev/sdb2: UUID="f4aba544-b1b0-4c9f-b3c6-969a5326ce00" TYPE="swap" PARTUUID="af606781-02"`
+  
+  (copy the details to fstab file)
+  
+  `sudo vim /etc/fstab`
+  
+  (use the already set partition there as a reference)
+  
 
