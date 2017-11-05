@@ -59,7 +59,9 @@
 
   `locale-gen`
 
-- set /etc/locale.conf to LANG=en_US.UTF-8
+- set /etc/locale.conf 
+
+  `echo LANG=en_US.UTF-8 > /etc/locale.conf`
 
 - set the clock (replace US and Mountain if you aren't in the mountain time zone)
 
