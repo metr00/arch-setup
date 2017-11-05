@@ -59,6 +59,8 @@
 
   `locale-gen`
 
+- edit /etc/locale.conf to LANG=en_US.UTF-8
+
 - set the clock (replace US and Mountain if you aren't in the mountain time zone)
 
   `ln -sf /usr/share/zoneoinfo/US/Mountain /etc/localtime`
