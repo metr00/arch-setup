@@ -227,5 +227,13 @@ troubleshooting
 
   `reboot`
 
+---
+- finding other Operating systems on separate drives
+  (install os-prober and run it as sudo)
+  (then update grub with this command)
+  
+  `sudo grub-mkconfig -o /boot/grub/grub.cfg`
+  
+  
 
 
