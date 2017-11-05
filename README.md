@@ -263,4 +263,6 @@ troubleshooting
   
   (use the already set partition there as a reference)
   
+  example: `UUID=3c6e9aeb-b03d-4303-a7c7-a3b5e2b97fc5 none            swap    sw              0       0`
+
 
