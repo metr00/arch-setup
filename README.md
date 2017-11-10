@@ -186,7 +186,7 @@
   `sudo pacman -S lxde`
 
 ---
-- install aditional packages like a file manager, terminal inulater, web browser, and text editor
+- install aditional packages like a file manager, terminal, web browser, and text editor
 
   `sudo pacman -S konsole dolphin firefox kate`
 
