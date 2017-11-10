@@ -69,7 +69,7 @@
 
   `echo (computer name) > /etc/hostname`
 
-- edit host file add 127.0.1.1 to ipaddress, localhost.localdomain to hostmane.domain.ort, and pc name to hostname
+- edit host file add 127.0.1.1 to ipaddress, localhost.localdomain to hostname.domain.ort, and pc name to hostname
 
   `nano /etc/hosts`
 
